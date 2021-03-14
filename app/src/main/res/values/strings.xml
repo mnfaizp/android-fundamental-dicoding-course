@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Fundamental</string>
     <string name="intent">Intent</string>
+    <string name="_100">100</string>
+    <string name="_200">200</string>
+    <string name="_300">300</string>
 </resources>
