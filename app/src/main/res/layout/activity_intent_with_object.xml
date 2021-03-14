@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntentWithObject">
+    tools:context=".IntentWithObjectActivity">
 
     <TextView
         android:id="@+id/tv_received_object"

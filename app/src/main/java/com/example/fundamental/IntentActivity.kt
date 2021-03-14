@@ -18,9 +18,9 @@ class IntentActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.btn_move_with_string -> {
-                val intentWithString = Intent(this, IntentWithString::class.java)
-                intentWithString.putExtra(IntentWithString.EXTRA_NAME, "My Name is My Name")
-                intentWithString.putExtra(IntentWithString.EXTRA_OTHER, "Other value is value other than this")
+                val intentWithString = Intent(this, IntentWithStringActivity::class.java)
+                intentWithString.putExtra(IntentWithStringActivity.EXTRA_NAME, "My Name is My Name")
+                intentWithString.putExtra(IntentWithStringActivity.EXTRA_OTHER, "Other value is value other than this")
                 startActivity(intentWithString)
             }
 
@@ -33,8 +33,8 @@ class IntentActivity : AppCompatActivity(), View.OnClickListener {
                     "I Live where I live"
                 )
 
-                val intentWithObject = Intent(this, IntentWithObject::class.java)
-                intentWithObject.putExtra(IntentWithObject.EXTRA_OBJECT, person)
+                val intentWithObject = Intent(this, IntentWithObjectActivity::class.java)
+                intentWithObject.putExtra(IntentWithObjectActivity.EXTRA_OBJECT, person)
                 startActivity(intentWithObject)
             }
         }

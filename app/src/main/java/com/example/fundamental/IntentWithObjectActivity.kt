@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class IntentWithObject : AppCompatActivity() {
+class IntentWithObjectActivity : AppCompatActivity() {
 
     companion object {
         val EXTRA_OBJECT = "extra_object"

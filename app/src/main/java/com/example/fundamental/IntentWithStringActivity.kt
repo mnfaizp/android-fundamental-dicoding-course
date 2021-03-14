@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class IntentWithString : AppCompatActivity() {
+class IntentWithStringActivity : AppCompatActivity() {
 
     companion object {
         const val EXTRA_NAME = "extra_name"
