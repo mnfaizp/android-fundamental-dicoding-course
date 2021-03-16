@@ -1,5 +1,6 @@
 package com.example.fundamental
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,7 +12,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 
-class DetailCategoryFragment : Fragment() {
+class DetailCategoryFragment : Fragment(), View.OnClickListener {
 
     var description: String? = null
 
@@ -53,6 +54,9 @@ class DetailCategoryFragment : Fragment() {
             val mFragmentManager = childFragmentManager
             mOptionDialogFragment.show(mFragmentManager, OptionDialogFragment::class.java.simpleName)
         }
+
+        btnProfile.setOnClickListener(this)
+
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -67,6 +71,15 @@ class DetailCategoryFragment : Fragment() {
             val categoryName = arguments?.getString(EXTRA_NAME)
             tvReceivedName.text = categoryName
             tvReceivedDescription.text = description
+        }
+    }
+
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            R.id.btn_profile -> {
+                val intentMove = Intent(activity, ProfileActivity::class.java)
+                startActivity(intentMove)
+            }
         }
     }
 
