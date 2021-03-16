@@ -15,4 +15,11 @@
     <string name="choose">Choose</string>
     <string name="fragment">Fragment</string>
     <string name="list_view">List View</string>
+    <string name="calculate_surface_area">Calculate Surface Area</string>
+    <string name="calculate_circumfance">Calculate Circumfance</string>
+    <string name="calculate_volume">Calculate Volume</string>
+    <string name="save">Save</string>
+    <string name="length">Length</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
 </resources>
