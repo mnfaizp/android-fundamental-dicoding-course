@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".OptionDialogFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/who_s_more_stronger" />
+
+    <RadioGroup
+        android:id="@+id/rg_choose_stronger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rb_lb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lu_bu" />
+
+        <RadioButton
+            android:id="@+id/rb_hk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/honda_tadakatsu" />
+
+        <RadioButton
+            android:id="@+id/rb_gm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gajah_mada" />
+
+        <RadioButton
+            android:id="@+id/rb_kr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/krishna" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_close_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="0.5"
+            android:text="@string/close" />
+
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="0.5"
+            android:text="@string/choose" />
+
+    </LinearLayout>
+
+</LinearLayout>
