@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnToFragment: Button = findViewById(R.id.btn_to_fragment)
         btnToFragment.setOnClickListener(this)
+
+        val btnToListView: Button = findViewById(R.id.btn_to_listView)
+        btnToListView.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -28,6 +31,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_to_fragment -> {
                 val moveToFragmentActivity = Intent(this, FragmentActivity::class.java)
                 startActivity(moveToFragmentActivity)
+            }
+
+            R.id.btn_to_listView -> {
+                val moveToListViewActivity = Intent(this, ListViewActivity::class.java)
+                startActivity(moveToListViewActivity)
             }
         }
     }

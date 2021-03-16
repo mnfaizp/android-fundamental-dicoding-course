@@ -17,7 +17,13 @@
     <Button
         android:id="@+id/btn_to_fragment"
         android:layout_width="match_parent"
-        android:text="Fragment"
+        android:text="@string/fragment"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_to_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list_view" />
 
 </LinearLayout>

@@ -13,4 +13,6 @@
     <string name="krishna">Krishna</string>
     <string name="close">Close</string>
     <string name="choose">Choose</string>
+    <string name="fragment">Fragment</string>
+    <string name="list_view">List View</string>
 </resources>
