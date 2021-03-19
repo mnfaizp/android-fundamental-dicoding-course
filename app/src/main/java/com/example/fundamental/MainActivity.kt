@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnToListView: Button = findViewById(R.id.btn_to_listView)
         btnToListView.setOnClickListener(this)
+
+        val btnToCustomView: Button = findViewById(R.id.btn_to_customView)
+        btnToCustomView.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -36,6 +39,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_to_listView -> {
                 val moveToListViewActivity = Intent(this, ListViewActivity::class.java)
                 startActivity(moveToListViewActivity)
+            }
+
+            R.id.btn_to_customView -> {
+                val moveToCustomView = Intent(this, CustomViewActivity::class.java)
+                startActivity(moveToCustomView)
             }
         }
     }
