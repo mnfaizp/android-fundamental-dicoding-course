@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CustomViewActivity">
 
-    <EditText
+    <com.example.fundamental.CustomEditText
         android:id="@+id/edt_custom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,6 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:enabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_custom" />
