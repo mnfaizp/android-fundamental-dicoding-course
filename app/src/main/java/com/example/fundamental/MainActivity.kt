@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnToCustomView: Button = findViewById(R.id.btn_to_customView)
         btnToCustomView.setOnClickListener(this)
+
+        val btnToUnitTestingActivity: Button = findViewById(R.id.btn_to_testing)
+        btnToUnitTestingActivity.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -44,6 +47,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_to_customView -> {
                 val moveToCustomView = Intent(this, CustomViewActivity::class.java)
                 startActivity(moveToCustomView)
+            }
+
+            R.id.btn_to_testing -> {
+                val mIntent = Intent(this, UnitTestingActivity::class.java)
+                startActivity(mIntent)
             }
         }
     }

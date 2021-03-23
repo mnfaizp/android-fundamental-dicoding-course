@@ -27,6 +27,7 @@
     <string name="grid">Grid</string>
     <string name="card">Card</string>
     <string name="result">Result</string>
+    <string name="unit_testing">Unit Testing</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>
