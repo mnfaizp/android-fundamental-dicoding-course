@@ -29,6 +29,8 @@
     <string name="result">Result</string>
     <string name="unit_testing">Unit Testing</string>
     <string name="now_you_see_me">Now You See Me</string>
+    <string name="task_completed">Task Complete</string>
+    <string name="compressing">Compressing %d %%</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>
