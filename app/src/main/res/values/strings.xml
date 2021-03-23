@@ -16,7 +16,7 @@
     <string name="fragment">Fragment</string>
     <string name="list_view">List View</string>
     <string name="calculate_surface_area">Calculate Surface Area</string>
-    <string name="calculate_circumfance">Calculate Circumfance</string>
+    <string name="calculate_circumference">Calculate Circumfance</string>
     <string name="calculate_volume">Calculate Volume</string>
     <string name="save">Save</string>
     <string name="length">Length</string>
@@ -26,6 +26,7 @@
     <string name="list">List</string>
     <string name="grid">Grid</string>
     <string name="card">Card</string>
+    <string name="result">Result</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>
