@@ -13,6 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fundamental"
         tools:ignore="AllowBackup">
+        <activity android:name=".BroadcastReceiverActivity"></activity>
+
         <service
             android:name=".BoundService"
             android:enabled="true"
