@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Fundamental">
-        <activity android:name=".BackgroundThreadActivity"></activity>
+        <activity android:name=".ServiceActivity"></activity>
+        <activity android:name=".BackgroundThreadActivity" />
         <activity android:name=".TestingActivity" />
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".CustomViewActivity" />

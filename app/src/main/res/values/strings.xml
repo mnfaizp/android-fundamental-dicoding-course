@@ -32,6 +32,7 @@
     <string name="task_completed">Task Complete</string>
     <string name="compressing">Compressing %d %%</string>
     <string name="background_thread">Background Thread</string>
+    <string name="service">Service</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>
