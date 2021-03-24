@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnToUnitTestingActivity: Button = findViewById(R.id.btn_to_testing)
         btnToUnitTestingActivity.setOnClickListener(this)
+
+        val btnToBackgroundThreadActivity: Button = findViewById(R.id.btn_to_background_thread)
+        btnToBackgroundThreadActivity.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -51,6 +54,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             R.id.btn_to_testing -> {
                 val mIntent = Intent(this, UnitTestingActivity::class.java)
+                startActivity(mIntent)
+            }
+
+            R.id.btn_to_background_thread -> {
+                val mIntent = Intent(this, BackgroundThreadActivity::class.java)
                 startActivity(mIntent)
             }
         }

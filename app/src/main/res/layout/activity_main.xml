@@ -37,5 +37,11 @@
         android:layout_height="wrap_content"
         android:text="@string/unit_testing" />
 
+    <Button
+        android:id="@+id/btn_to_background_thread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/background_thread" />
+
 
 </LinearLayout>

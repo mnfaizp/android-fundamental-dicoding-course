@@ -31,6 +31,7 @@
     <string name="now_you_see_me">Now You See Me</string>
     <string name="task_completed">Task Complete</string>
     <string name="compressing">Compressing %d %%</string>
+    <string name="background_thread">Background Thread</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>
