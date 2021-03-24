@@ -38,6 +38,13 @@
     <string name="start_bound_service">Start Bound Service</string>
     <string name="stop_bound_service">Stop Bound Service</string>
     <string name="broadcast_receiver">Broadcast Receiver</string>
+    <string name="sms_receiver_app">SMS Receiver App</string>
+    <string name="check_sms_permission">Check SMS Permission</string>
+    <string name="coming_from">Coming From</string>
+    <string name="this_play">Do you wanna play today</string>
+    <string name="close">Close</string>
+    <string name="incoming_message">Incoming Message</string>
+    <string name="from">from: %s</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>
