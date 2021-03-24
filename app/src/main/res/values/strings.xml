@@ -33,6 +33,10 @@
     <string name="compressing">Compressing %d %%</string>
     <string name="background_thread">Background Thread</string>
     <string name="service">Service</string>
+    <string name="start_service">Start Service</string>
+    <string name="start_job_intent_service">Start Job Intent Service</string>
+    <string name="start_bound_service">Start Bound Service</string>
+    <string name="stop_bound_service">Stop Bound Service</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>
