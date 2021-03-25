@@ -33,6 +33,9 @@ class AlarmManagerActivity : AppCompatActivity(), View.OnClickListener, DatePick
         binding?.btnRepeatingTime?.setOnClickListener(this)
         binding?.btnSetRepeatingAlarm?.setOnClickListener(this)
 
+        //cancel alarm listener
+        binding?.btnCancelRepeatingAlarm?.setOnClickListener(this)
+
         alarmReceiver = AlarmReceiver()
     }
 
@@ -66,6 +69,8 @@ class AlarmManagerActivity : AppCompatActivity(), View.OnClickListener, DatePick
                 val repeatMessage = binding?.edtRepeatingMessage?.text.toString()
                 alarmReceiver.setRepeatingAlarm(this, AlarmReceiver.TYPE_REPEATING, repeatTime, repeatMessage)
             }
+
+            R.id.btn_cancel_repeating_alarm -> alarmReceiver.cancelAlarm(this, AlarmReceiver.TYPE_REPEATING)
         }
     }
 
