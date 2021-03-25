@@ -1,5 +1,6 @@
 package com.example.fundamental
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -27,6 +28,10 @@ class JsonActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         getRandomQuote()
+
+        binding.btnShowQuotes.setOnClickListener {
+            startActivity(Intent(this@JsonActivity, ListQuotesActivity::class.java))
+        }
     }
 
     private fun getRandomQuote() {
