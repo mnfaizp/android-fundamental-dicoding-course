@@ -57,6 +57,9 @@
     <string name="json_things">JSON Things</string>
     <string name="show_me_list_of_quotes">Show me list of quotes</string>
     <string name="job_scheduler">Job Scheduler</string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="description">Description</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>

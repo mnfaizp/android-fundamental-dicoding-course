@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fundamental"
         tools:ignore="AllowBackup">
-        <activity android:name=".JobSchedulerActivity"></activity>
+        <activity android:name=".JobSchedulerActivity"/>
         <activity android:name=".ListQuotesActivity" />
         <activity android:name=".JsonActivity" />
 
@@ -75,6 +75,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".GetCurrentWeatherJobService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
 
 </manifest>
