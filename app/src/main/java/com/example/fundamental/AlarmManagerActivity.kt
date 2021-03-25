@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.fundamental.databinding.ActivityAlarmManagerBinding
+import java.sql.Time
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -28,6 +29,10 @@ class AlarmManagerActivity : AppCompatActivity(), View.OnClickListener, DatePick
         binding?.btnOnceTime?.setOnClickListener(this)
         binding?.btnSetOnceAlarm?.setOnClickListener(this)
 
+        //repeating alarm listener
+        binding?.btnRepeatingTime?.setOnClickListener(this)
+        binding?.btnSetRepeatingAlarm?.setOnClickListener(this)
+
         alarmReceiver = AlarmReceiver()
     }
 
@@ -49,6 +54,17 @@ class AlarmManagerActivity : AppCompatActivity(), View.OnClickListener, DatePick
                 val onceMessage = binding?.edtOnceMessage?.text.toString()
 
                 alarmReceiver.setOneTimeAlarm(this, AlarmReceiver.TYPE_ONE_TIME, onceDate, onceTime, onceMessage)
+            }
+
+            R.id.btn_repeating_time -> {
+                val timePickerFragmentRepeat = TimePickerFragment()
+                timePickerFragmentRepeat.show(supportFragmentManager, TIME_PICKER_REPEAT_TAG)
+            }
+
+            R.id.btn_set_repeating_alarm -> {
+                val repeatTime = binding?.tvRepeatingTime?.text.toString()
+                val repeatMessage = binding?.edtRepeatingMessage?.text.toString()
+                alarmReceiver.setRepeatingAlarm(this, AlarmReceiver.TYPE_REPEATING, repeatTime, repeatMessage)
             }
         }
     }
@@ -77,7 +93,7 @@ class AlarmManagerActivity : AppCompatActivity(), View.OnClickListener, DatePick
 
         when (tag) {
             TIME_PICKER_ONCE_TAG -> binding?.tvOnceTime?.text = dateFormat.format(calendar.time)
-            TIME_PICKER_REPEAT_TAG -> {}
+            TIME_PICKER_REPEAT_TAG -> binding?.tvRepeatingTime?.text = dateFormat.format(calendar.time)
             else -> {
 
             }
