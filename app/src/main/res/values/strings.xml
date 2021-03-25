@@ -60,6 +60,7 @@
     <string name="start">Start</string>
     <string name="cancel">Cancel</string>
     <string name="description">Description</string>
+    <string name="work_manager">Work Manager</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>

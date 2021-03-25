@@ -73,4 +73,10 @@
         android:layout_height="wrap_content"
         android:text="@string/job_scheduler" />
 
+    <Button
+        android:id="@+id/btn_to_work_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/work_manager" />
+
 </LinearLayout>

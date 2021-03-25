@@ -101,6 +101,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val mIntent = Intent(this, JobSchedulerActivity::class.java)
                 startActivity(mIntent)
             }
+
+            R.id.btn_to_work_manager -> {
+                val mIntent = Intent(this, WorkManagerActivity::class.java)
+                startActivity(mIntent)
+            }
         }
     }
 }
