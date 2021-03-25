@@ -37,6 +37,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnToAlarmManagerActivity: Button = findViewById(R.id.btn_to_alarm_manager)
         btnToAlarmManagerActivity.setOnClickListener(this)
+
+        val btnToJsonActivity: Button = findViewById(R.id.btn_to_json)
+        btnToJsonActivity.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -83,6 +86,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             R.id.btn_to_alarm_manager -> {
                 val mIntent = Intent(this, AlarmManagerActivity::class.java)
+                startActivity(mIntent)
+            }
+
+            R.id.btn_to_json -> {
+                val mIntent = Intent(this, JsonActivity::class.java)
                 startActivity(mIntent)
             }
         }

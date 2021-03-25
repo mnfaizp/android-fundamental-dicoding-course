@@ -15,10 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fundamental"
         tools:ignore="AllowBackup">
+        <activity android:name=".JsonActivity"></activity>
+
         <receiver
             android:name=".AlarmReceiver"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true" />
 
         <activity android:name=".AlarmManagerActivity" />
 

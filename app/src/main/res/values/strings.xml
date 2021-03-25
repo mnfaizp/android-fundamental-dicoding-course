@@ -54,6 +54,7 @@
     <string name="set_repeating_alarm">Set Repeating Alarm</string>
     <string name="cancel_alarm">Batalkan Alarm</string>
     <string name="alarm_time">Waktu Alarm</string>
+    <string name="json_things">JSON Things</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>
