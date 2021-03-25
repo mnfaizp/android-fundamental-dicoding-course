@@ -41,11 +41,19 @@
     <string name="sms_receiver_app">SMS Receiver App</string>
     <string name="check_sms_permission">Check SMS Permission</string>
     <string name="coming_from">Coming From</string>
-    <string name="this_play">Do you wanna play today</string>
-    <string name="close">Close</string>
+    <string name="this_play">Do you want to play today</string>
     <string name="incoming_message">Incoming Message</string>
     <string name="from">from: %s</string>
     <string name="alarm_manager">Alarm Manager</string>
+
+    <string name="one_time_alarm">One Time Alarm</string>
+    <string name="alarm_date">Tanggal Alarm</string>
+    <string name="set_one_time_alarm">Set One Time Alarm</string>
+    <string name="alarm_message">Pesan Alarm</string>
+    <string name="repeating_alarm">Repeating Alarm</string>
+    <string name="set_repeating_alarm">Set Repeating Alarm</string>
+    <string name="cancel_alarm">Batalkan Alarm</string>
+    <string name="alarm_time">Waktu Alarm</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>

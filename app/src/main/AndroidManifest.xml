@@ -15,7 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fundamental"
         tools:ignore="AllowBackup">
-        <activity android:name=".AlarmManagerActivity"></activity>
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+        <activity android:name=".AlarmManagerActivity" />
 
         <receiver
             android:name=".SmsReceiver"
