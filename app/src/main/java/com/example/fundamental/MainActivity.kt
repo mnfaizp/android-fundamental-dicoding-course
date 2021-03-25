@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnToBroadcastReceiver: Button = findViewById(R.id.btn_to_broadcast_receiver)
         btnToBackgroundThreadActivity.setOnClickListener(this)
+
+        val btnToAlarmManagerActivity: Button = findViewById(R.id.btn_to_alarm_manager)
+        btnToAlarmManagerActivity.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -75,7 +78,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             R.id.btn_to_broadcast_receiver -> {
                 val mIntent = Intent(this, BroadcastReceiverActivity::class.java)
-                startService(mIntent)
+                startActivity(mIntent)
+            }
+
+            R.id.btn_to_alarm_manager -> {
+                val mIntent = Intent(this, AlarmManagerActivity::class.java)
+                startActivity(mIntent)
             }
         }
     }

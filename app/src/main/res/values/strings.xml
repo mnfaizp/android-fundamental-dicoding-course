@@ -45,6 +45,7 @@
     <string name="close">Close</string>
     <string name="incoming_message">Incoming Message</string>
     <string name="from">from: %s</string>
+    <string name="alarm_manager">Alarm Manager</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>

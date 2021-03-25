@@ -55,4 +55,10 @@
         android:layout_height="wrap_content"
         android:text="@string/broadcast_receiver" />
 
+    <Button
+        android:id="@+id/btn_to_alarm_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_manager" />
+
 </LinearLayout>
