@@ -56,6 +56,7 @@
     <string name="alarm_time">Waktu Alarm</string>
     <string name="json_things">JSON Things</string>
     <string name="show_me_list_of_quotes">Show me list of quotes</string>
+    <string name="job_scheduler">Job Scheduler</string>
 
     <string-array name="data_name">
         <item>Ahmad Dahlan</item>

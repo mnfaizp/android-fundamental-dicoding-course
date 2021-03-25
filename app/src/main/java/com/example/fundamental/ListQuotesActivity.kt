@@ -6,10 +6,13 @@ import android.util.Log
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.lifecycle.lifecycleScope
 import com.example.fundamental.databinding.ActivityListQuotesBinding
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.AsyncHttpResponseHandler
 import cz.msebera.android.httpclient.Header
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import org.json.JSONArray
 import java.lang.Exception
 
@@ -51,7 +54,7 @@ class ListQuotesActivity : AppCompatActivity() {
                 Log.d(TAG, result)
 
                 try {
-                    val jsonArray = JSONArray()
+                    val jsonArray = JSONArray(result)
 
                     for (i in 0 until jsonArray.length()) {
                         val jsonObject = jsonArray.getJSONObject(i)
@@ -59,10 +62,12 @@ class ListQuotesActivity : AppCompatActivity() {
                         val author = jsonObject.getString("author")
 
                         listQuote.add("\n$quote\n - $author \n")
+                        Log.d(TAG, listQuote.toString())
                     }
 
                     val adapter = ArrayAdapter(this@ListQuotesActivity, android.R.layout.simple_list_item_1, listQuote)
                     binding.lvQuotes.adapter = adapter
+
                 } catch (e: Exception) {
                     Toast.makeText(this@ListQuotesActivity, e.message, Toast.LENGTH_SHORT).show()
                     e.printStackTrace()

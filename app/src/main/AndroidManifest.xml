@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fundamental"
         tools:ignore="AllowBackup">
-        <activity android:name=".ListQuotesActivity"></activity>
+        <activity android:name=".JobSchedulerActivity"></activity>
+        <activity android:name=".ListQuotesActivity" />
         <activity android:name=".JsonActivity" />
 
         <receiver

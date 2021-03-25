@@ -40,6 +40,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnToJsonActivity: Button = findViewById(R.id.btn_to_json)
         btnToJsonActivity.setOnClickListener(this)
+
+        val btnToJobSchedulerActivity: Button = findViewById(R.id.btn_to_job_scheduler)
+        btnToJobSchedulerActivity.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -91,6 +94,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             R.id.btn_to_json -> {
                 val mIntent = Intent(this, JsonActivity::class.java)
+                startActivity(mIntent)
+            }
+
+            R.id.btn_to_job_scheduler -> {
+                val mIntent = Intent(this, JobSchedulerActivity::class.java)
                 startActivity(mIntent)
             }
         }
