@@ -42,6 +42,10 @@ class AlarmReceiver : BroadcastReceiver() {
         val notificationId = if (type.equals(TYPE_ONE_TIME, ignoreCase = true)) ID_ONETIME else ID_REPEATING
 
         showToast(context, title, message)
+
+        if (message != null) {
+            showAlarmNotification(context, title, message, notificationId)
+        }
     }
 
     private fun showToast(context: Context, title: String, message: String?) {
